@@ -26,19 +26,119 @@
 </header>
 
 <div class="page-header">
-    <div class="page-header-dots"></div>
     <div class="page-header-inner">
         <span class="page-tag">MAP</span>
         <h1 class="page-title">Cebu City <span>Map</span></h1>
-        <p class="page-subtitle">Explore the map of Cebu City and its surrounding areas.<br>Powered by Google Maps and supported by local transit authorities.</nr></p>
+        <p class="page-subtitle">Explore the map of Cebu City and its surrounding areas.<br>Powered by Google Maps and supported by local transit authorities.</p>
     </div>
 </div>
 
 <main>
-        <div class="map-section">
-            <iframe class ="map-iframe" src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d43010.46089150625!2d123.90810510888417!3d10.294012313366537!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sph!4v1771919201986!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <button class="button_map" onclick="window.location.href='jeepneys.html'">Find Route</button>
+    <div class="map-section">
+        <iframe
+            class="map-iframe"
+            src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d43010.46089150625!2d123.90810510888417!3d10.294012313366537!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sph!4v1771919201986!5m2!1sen!2sph"
+            width="100%"
+            height="450"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        <button class="button_map" onclick="window.location.href='jeepneys.html'">Find Route</button>
+    </div>
+    <!-- ===== TOURIST SPOTS SECTION ===== -->
+    <section class="spots-section">
+        <div class="spots-header">
+            <hr>
+            <h2 class="spots-title">Famous <span>Tourist Spots</span></h2>
+            <p class="spots-subtitle">Discover the best destinations Cebu has to offer</p>
         </div>
+        <div class="spots-grid">
+
+            <div class="spot-card">
+                <div class="spot-img-wrap">
+                    <img src="" alt="Tourist Spot 1" class="spot-img">
+                    <div class="spot-img-placeholder">
+                       <img src="thumbnails/magelan.jpg" alt="Placeholder" class="placeholder-img">
+                    </div>
+                </div>
+                <div class="spot-info">
+                    <h3 class="spot-name">Magellans Cross</h3>
+                    <p class="spot-desc" style="text-align: justify;">Magellan's Cross is a significant historical and religious landmark in Cebu City, Philippines, located in an octagonal pavilion on Magallanes Street near the Basilica Minore del Santo Niño and the Cebu City Hall.</p>
+                </div>
+            </div>
+
+            <div class="spot-card">
+                <div class="spot-img-wrap">
+                    <img src="" alt="Tourist Spot 2" class="spot-img">
+                    <div class="spot-img-placeholder">
+                        <img style="width: 100%; height: 100%; object-fit: cover;" src="thumbnails/temple-of-leah.jpg" alt="Placeholder" class="placeholder-img">
+                    </div>
+                </div>
+                <div class="spot-info">
+                    <h3 class="spot-name">Temple of Leah</h3>
+                    <p class="spot-desc" style="text-align: justify;">The Temple of Leah is a historic site in Cebu City, known for its unique architecture and cultural significance.</p>
+                </div>
+            </div>
+
+            <div class="spot-card">
+                <div class="spot-img-wrap">
+                    <img src="" alt="Tourist Spot 3" class="spot-img">
+                    <div class="spot-img-placeholder">
+                         <img style="width: 100%; height: 100%; object-fit: cover;" src="thumbnails/fortsanpedro.jpg" alt="Placeholder" class="placeholder-img">
+                    </div>
+                </div>
+                <div class="spot-info">
+                    <h3 class="spot-name">Fort San Pedro</h3>
+                    <p class="spot-desc" style="text-align: justify;">Fort San Pedro is the oldest and smallest triangular bastion fort in the Philippines, originally constructed in 1565 by Spanish conquistador Miguel López de Legazpi in Cebu City.</p>
+                </div>
+            </div>
+
+            <div class="spot-card">
+                <div class="spot-img-wrap">
+                    <img src="" alt="Tourist Spot 4" class="spot-img">
+                    <div class="spot-img-placeholder">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+                        <span>Add Photo</span>
+                    </div>
+                </div>
+                <div class="spot-info">
+                    <h3 class="spot-name">Spot Name</h3>
+                    <p class="spot-desc">Short description of this tourist destination.</p>
+                </div>
+            </div>
+
+            <div class="spot-card">
+                <div class="spot-img-wrap">
+                    <img src="" alt="Tourist Spot 5" class="spot-img">
+                    <div class="spot-img-placeholder">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+                        <span>Add Photo</span>
+                    </div>
+                </div>
+                <div class="spot-info">
+                    <h3 class="spot-name">Spot Name</h3>
+                    <p class="spot-desc">Short description of this tourist destination.</p>
+                </div>
+            </div>
+
+            <div class="spot-card">
+                <div class="spot-img-wrap"> 
+                    <img src="" alt="Tourist Spot 6" class="spot-img">
+                    <div class="spot-img-placeholder">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
+                        <span>Add Photo</span>
+                    </div>
+                </div>
+                <div class="spot-info">
+                    <h3 class="spot-name">Spot Name</h3>
+                    <p class="spot-desc">Short description of this tourist destination.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
 </main>
 
 <footer>

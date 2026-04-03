@@ -129,13 +129,15 @@ header {
   overflow: hidden;
 }
 
-.sidebar-header::before {  /*reason of polka dots*/
+/* .sidebar-header::before {  
   content: '';
   position: absolute;
   inset: 0;
   background-image: radial-gradient(circle, rgba(255,255,255,0.1) 1.5px, transparent 1.5px);
   background-size: 18px 18px;
-}
+} */
+
+/*reason of polka dots*/
 
 .route-code {
   font-family: 'Barlow Condensed';

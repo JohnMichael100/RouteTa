@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RouteTa — Cebu Route Finder</title>
     <link rel="stylesheet" href="index.css">
-    <link rel="icon" type="image/png" href="thumbnails/transparent2.ico">
+    <link rel="icon" type="ico" href="/thumbnails/transparent2.ico">
 </head>
 <body>
 
@@ -13,24 +13,23 @@
     <div class="header-container">
         <a href="Index.html" class="logo-link">
             <img class="logoHeader" src="thumbnails/logo2.png" alt="Logo">
-            <img class="headerTitle" src="thumbnails/logo_text.png" alt="TransParent">
+            <img class="headerTitle" src="thumbnails/logo_text.png" alt="RouteTa">
         </a>
         <nav class="navbar">
-            <a class="navbar_text active" href="Index.html">Home</a>
-            <a class="navbar_text" href="jeepneys.html">Jeepneys</a>
-            <a class="navbar_text" href="cities.html">Cities</a>
-            <a class="navbar_text" href="map.html">Map</a>
-            <a class="navbar_text" href="About.html">About</a>
+            <a class="active" href="Index.html">Home</a>
+            <a href="jeepneys.html">Jeepneys</a>
+            <a href="cities.html">Cities</a>
+            <a href="map.html">Map</a>
+            <a href="About.html">About</a>
         </nav>
     </div>
 </header>
 
-<!--SEARCH -->
+<!-- HERO -->
 <section class="hero">
     <div class="hero-bg"></div>
-    <div class="hero-dots"></div>
     <div class="hero-content">
-        <!-- <div class="hero-badge">Cebu Public Transport Guide</div> -->
+        <div class="hero-badge">Cebu Public Transport Guide</div>
         <h1 class="hero-title">Find Your <span>Route</span></h1>
         <p class="hero-subtitle">Jeepney routes across Cebu City fast, simple, free.</p>
 
@@ -38,10 +37,12 @@
             <div class="search-card-label">Where are you going?</div>
             <div class="search-row">
                 <div class="search-input-wrap">
+                    <span class="input-icon"></span>
                     <input class="search-bar1" type="text" id="from" placeholder="From (e.g. Talisay)">
                 </div>
                 <span class="swap-icon">→</span>
                 <div class="search-input-wrap">
+                    <span class="input-icon"></span>
                     <input class="search-bar2" type="text" id="to" placeholder="To (e.g. Cebu)">
                 </div>
                 <button class="button_route" onclick="search()">Find Route</button>
@@ -73,16 +74,223 @@
             </div>
         </div>
 
-        <!-- VIDEO PREVIEW -->
-        <div class="section-tag">Overview</div>
-        <h2 class="section-title">Explore Cebu's Transport Network</h2>
+        <!-- HOW IT WORKS -->
+        <section class="section">
+            <div class="section-tag">How It Works</div>
+            <h2 class="section-title">Navigate Cebu in 3 Steps</h2>
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-number">01</div>
+                    <h3 class="step-title">Enter Your Locations</h3>
+                    <p class="step-desc">Type your starting point and destination. Use barangay names, landmarks, or city names.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">02</div>
+                    <h3 class="step-title">Find Your Jeepney</h3>
+                    <p class="step-desc">We match you with the correct route showing the route code, stops, and where to board.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">03</div>
+                    <h3 class="step-title">Ride & Explore</h3>
+                    <p class="step-desc">Hop on the right jeep and explore Cebu with confidence. No sign-up, no hassle.</p>
+                </div>
+            </div>
+        </section>
 
-        <div class="video-wrap">
-            <img src="thumbnails/map.png" >
-            <!-- <video autoplay muted loop playsinline>
-                <source src="thumbnails/background_video.mp4" type="video/mp4">
-            </video> -->
-        </div>
+        <!-- MAP -->
+        <section class="section">
+            <div class="section-tag">Overview</div>
+            <h2 class="section-title">Explore Cebu's Transport Network</h2>
+            <div class="video-wrap">
+                <video width="320" height="240" loop autoplay>
+  <source src="/thumbnails/ads.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+            </div>
+        </section>
+
+        <!-- JEEPNEY COMPANIES -->
+        <section class="section">
+            <div class="section-tag">Operators</div>
+            <h2 class="section-title">Jeepney Companies & Operators</h2>
+            <div class="companies-grid">
+
+                <div class="company-card">
+                    <div class="company-img-wrap">
+                        <img style="width: 100%; height: 100%; object-fit: cover;" src="thumbnails/index3.jpg" alt="Comet Transport">
+                        <div class="img-placeholder">
+                            <span class="placeholder-icon"></span>
+                            <span class="placeholder-label">Photo Coming Soon</span>
+                        </div>
+                    </div>
+                    <div class="company-info">
+                        <p class="company-name">Peoples Jepp</p>
+                        <span class="company-tag">Route 03L</span>
+                        <p class="company-desc">Operates the Mabolo–Colon corridor, one of Cebu's busiest urban routes.</p>
+                        <div class="company-meta">
+                            <div class="meta-item">
+                                <span class="meta-val">03L</span>
+                                <span class="meta-key">Route</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-val">₱14</span>
+                                <span class="meta-key">Base Fare</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-val">~25 min</span>
+                                <span class="meta-key">Travel</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="company-card">
+                    <div class="company-img-wrap">
+                        <img src="thumbnails/mango.png" alt="South Bus Transport">
+                        <div class="img-placeholder">
+                            <span class="placeholder-icon"></span>
+                            <span class="placeholder-label">Photo Coming Soon</span>
+                        </div>
+                    </div>
+                    <div class="company-info">
+                        <p class="company-name">Mango Jeep</p>
+                        <span class="company-tag">Talisay Route</span>
+                        <p class="company-desc">Connects Cebu City to Talisay via the South Road Properties.</p>
+                        <div class="company-meta">
+                            <div class="meta-item">
+                                <span class="meta-val">42E</span>
+                                <span class="meta-key">Route</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-val">₱16</span>
+                                <span class="meta-key">Base Fare</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-val">~35 min</span>
+                                <span class="meta-key">Travel</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="company-card">
+                    <div class="company-img-wrap">
+                        <img src="thumbnails/13c.png" alt="Citi Bus Liner">
+                        <div class="img-placeholder">
+                            <span class="placeholder-icon"></span>
+                            <span class="placeholder-label">Photo Coming Soon</span>
+                        </div>
+                    </div>
+                    <div class="company-info">
+                        <p class="company-name">PTAMPCO</p>
+                        <span class="company-tag">Mandaue Route</span>
+                        <p class="company-desc">Covers the Mandaue–SM City–Carbon Market corridor.</p>
+                        <div class="company-meta">
+                            <div class="meta-item">
+                                <span class="meta-val">22D,21A</span>
+                                <span class="meta-key">Route</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-val">₱14</span>
+                                <span class="meta-key">Base Fare</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-val">~30 min</span>
+                                <span class="meta-key">Travel</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="company-card">
+                    <div class="company-img-wrap">
+                        <img src="thumbnails/Ltransco.png" alt="Bi-An Transport">
+                        <div class="img-placeholder">
+                            <span class="placeholder-icon"></span>
+                            <span class="placeholder-label">Photo Coming Soon</span>
+                        </div>
+                    </div>
+                    <div class="company-info">
+                        <p class="company-name">L-Transco</p>
+                        <span class="company-tag">Lahug Route</span>
+                        <p class="company-desc">Serves the Lahug–IT Park–Colon loop for workers and students.</p>
+                        <div class="company-meta">
+                            <div class="meta-item">
+                                <span class="meta-val">04L</span>
+                                <span class="meta-key">Route</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-val">₱13</span>
+                                <span class="meta-key">Base Fare</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-val">~20 min</span>
+                                <span class="meta-key">Travel</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="company-card">
+                    <div class="company-img-wrap">
+                        <img src="thumbnails/index3.jpg" alt="Talamban Express">
+                        <div class="img-placeholder">
+                            <span class="placeholder-icon"></span>
+                            <span class="placeholder-label">Photo Coming Soon</span>
+                        </div>
+                    </div>
+                    <div class="company-info">
+                        <p class="company-name">PITAMPCO</p>
+                        <span class="company-tag">Talamban Route</span>
+                        <p class="company-desc">Runs the Talamban–University of Cebu–SM Consolacion line.</p>
+                        <div class="company-meta">
+                            <div class="meta-item">
+                                <span class="meta-val">13C</span>
+                                <span class="meta-key">Route</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-val">₱15</span>
+                                <span class="meta-key">Base Fare</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-val">~40 min</span>
+                                <span class="meta-key">Travel</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="company-card">
+                    <div class="company-img-wrap">
+                        <img src="thumbnails/company_bulacao.jpg" alt="Bulacao Transit">
+                        <div class="img-placeholder">
+                            <span class="placeholder-icon"></span>
+                            <span class="placeholder-label">Photo Coming Soon</span>
+                        </div>
+                    </div>
+                    <div class="company-info">
+                        <p class="company-name">Bulacao Transit</p>
+                        <span class="company-tag">Bulacao Route</span>
+                        <p class="company-desc">Operates between Bulacao and Carbon Market via Pardo.</p>
+                        <div class="company-meta">
+                            <div class="meta-item">
+                                <span class="meta-val">B-09</span>
+                                <span class="meta-key">Route</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-val">₱13</span>
+                                <span class="meta-key">Base Fare</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-val">~28 min</span>
+                                <span class="meta-key">Travel</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
 
     </div>
 </main>
@@ -98,9 +306,8 @@
 
     function search() {
         const from = normalizeRoute(document.getElementById("from").value);
-        const to = normalizeRoute(document.getElementById("to").value);
+        const to   = normalizeRoute(document.getElementById("to").value);
 
-        // Support both directions (e.g. Talisay → Cebu or Cebu → Talisay)
         if ((from === "mabololuyo" && to === "colon") || (from === "colon" && to === "mabololuyo")) {
             window.location.href = "choosen_jeepney_03L.html";
         } else if ((from === "cebu" && to === "talisay") || (from === "talisay" && to === "cebu")) {
@@ -110,8 +317,7 @@
         }
     }
 
-    // Allow Enter key to trigger search
-    document.addEventListener("keydown", function(e) {
+    document.addEventListener("keydown", function (e) {
         if (e.key === "Enter") search();
     });
 </script>
